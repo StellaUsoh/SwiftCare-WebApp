@@ -1,15 +1,12 @@
-
 .header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 3rem; 
-    padding-right: 7rem; 
-    padding-bottom: 1.75rem; 
-    padding-left: 8rem; 
+    padding: 3rem 8rem 1.75rem;
     width: 100%;
     background-color: white;
-    height: 119px;
+    height: auto;
+    min-height: 119px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.04);
   }
   
@@ -107,10 +104,34 @@
 }
 
 
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .header {
+    padding: 2.5rem 6rem 1.5rem;
+  }
+
+  .navigation {
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    padding: 2rem 4rem 1.25rem;
+  }
+
+  .navigation {
+    gap: 2rem;
+  }
+
+  .nav-link {
+    font-size: 0.8rem;
+  }
+}
+
 @media (max-width: 768px) {
   .header {
     padding: 1rem 2rem;
-    height: auto;
   }
 
   .navigation {
@@ -150,6 +171,46 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+  }
+
+  .login-btn,
+  .register-btn {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    padding: 1rem;
+  }
+
+  .navigation {
+    padding: 1rem;
+  }
+
+  .nav-link {
+    font-size: 0.75rem;
+  }
+
+  .login-btn,
+  .register-btn {
+    font-size: 0.75rem;
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 0.75rem;
+  }
+
+  .navigation {
+    padding: 0.75rem;
+  }
+
+  .nav-link {
+    font-size: 0.7rem;
   }
 }
 

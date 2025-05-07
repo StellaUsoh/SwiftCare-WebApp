@@ -4,13 +4,16 @@
   box-sizing: border-box;
   font-family: Poppins;
 }
-body{
-  height: 100vh;
-  overflow-x: hidden;
 
+html {
+  font-size: 16px;
 }
 
-
+body {
+  height: 100vh;
+  overflow-x: hidden;
+  width: 100%;
+}
 
 button {
   cursor: pointer;
@@ -30,10 +33,34 @@ button:active {
     inset -4px 0 6px rgba(0, 0, 0, 0.2);
 }
 
+/* Responsive breakpoints */
+@media (max-width: 1200px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+}
 
 @media (max-width: 768px) {
-  body{
-    font-size:0.95rem;
+  html {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 11px;
   }
 }
 
